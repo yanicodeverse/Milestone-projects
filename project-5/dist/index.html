@@ -11,10 +11,10 @@
 <body>
     <div id="wrapper" class="px-16 py-10">
         <header class="flex justify-between items-center">
-            <div id="logo">
+            <div id="logo" class="max-md:w-[10rem]">
                 <img src="./assets/Logo.png" alt="pixelab logo">
             </div>
-            <nav>
+            <nav class="hidden md:flex">
                 <ul class="flex">
                     <li class="list-none px-3"><a href="#" class="text-lg capitalize font-bold text-stone-900">home</a>
                     </li>
@@ -26,7 +26,7 @@
                             contacts</a></li>
                 </ul>
             </nav>
-            <div id="header--button--container" class="flex gap-4 ">
+            <div id="header--button--container" class="hidden md:flex gap-4 ">
                 <a href="#" class="font-medium text-lg px-5 py-3 text-stone-900">Log in</a>
                 <a href="#" class="px-6 py-3 bg-orange-500 rounded-lg text-white">Sign up</a>
             </div>
@@ -46,7 +46,7 @@
                     <p class="text-lg font-semibold">Learn more</p>
                 </div>
             </div>
-            <div id="hero--right" class="flex flex-col justify-center relative w-11/12">
+            <div id="hero--right" class="hidden md:flex flex-col justify-center relative w-11/12">
                 <img src="./assets/joyful-guy-texting-message-smartphone2 1.png" alt="" class="z-10 ">
                 <img src="./assets/Group 10.png" alt="" class="-z-30 top-12 -left-8 absolute -rotate-8">
             </div>
@@ -55,9 +55,9 @@
         <div id="service" class="w-full py-16">
             <h2 class="uppercase tracking-[.35em] text-center text-stone-500">service</h2>
             <h2 class="capitalize text-5xl text-center text-slate-800 font-semibold py-4">Our vision & Our goal</h2>
-            <div id="service--cards" class="flex py-16 gap-6">
+            <div id="service--cards" class="md:flex md:flex-row flex-col py-16 gap-6">
                 <div id="service--card--1"
-                    class=" w-1/3 flex flex-col justify-center rounded-2xl items-center shadow-xl">
+                    class="w-full md:w-1/3 flex flex-col justify-center rounded-2xl items-center shadow-xl">
                     <img src="./assets/wand-magic-sparkles-solid.svg" alt="" width="60" height="60" class="pt-4">
                     <h2 class="text-4xl py-9 font-semibold">Graphic Design</h2>
                     <p class="text-center px-8  text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -73,7 +73,7 @@
 
                 </div>
                 <div id="service--card--2"
-                    class=" w-1/3 flex flex-col justify-center rounded-2xl items-center shadow-xl">
+                    class="w-full md:w-1/3 flex flex-col justify-center rounded-2xl items-center shadow-xl my-20 md:my-0">
                     <img src="./assets/video-solid.svg" alt="" width="60" height="60" class="pt-4">
                     <h2 class="text-4xl py-9 font-semibold">Video Editing</h2>
                     <p class="text-center px-8  text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -89,7 +89,7 @@
 
                 </div>
                 <div id="service--card--3"
-                    class=" w-1/3 flex flex-col justify-center rounded-2xl items-center shadow-xl">
+                    class="w-full md:w-1/3 flex flex-col justify-center rounded-2xl items-center shadow-xl">
                     <img src="./assets/square-poll-vertical-solid.svg" alt="" width="60" height="60" class="pt-4">
                     <h2 class="text-4xl py-9 font-semibold">Digital Marketing</h2>
                     <p class="text-center px-8  text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -105,7 +105,7 @@
 
                 </div>
             </div>
-            <div id="service--video--sec" class="w-full py-28 flex gap-40">
+            <div id="service--video--sec" class="w-full py-28 md:flex md:flex-row flex-col gap-40">
                 <div id="service--text--content">
                     <h1 class="text-2xl font-semibold text-indigo-900">Many Blocks and Component</h1>
                     <p class="text-lg text-slate-400 py-16">Startup Framework contains components and complex blocks
@@ -113,7 +113,7 @@
                         easily be integrated into almost any design.</p>
                     <a href="#" class="text-indigo-900 text-xl px-11 py-3 border border-2 rounded-3xl">Explore</a>
                 </div>
-                <div id="service--video">
+                <div id="service--video" class="mt-20 md:mt-0">
                     <img src="./assets/Video Player.png" alt="">
                 </div>
             </div>
@@ -122,7 +122,7 @@
         <div id="testimonials" class="felx flex-col w-full py-20">
             <h2 class="uppercase tracking-[.35em] text-center text-stone-500">Testimonials</h2>
             <h2 class="capitalize text-5xl text-center text-slate-800 font-semibold py-4">What Clients say about us</h2>
-            <div id="testimonial--cards" class="grid grid-cols-2 grid py-24 max-w-4xl mx-auto gap-20">
+            <div id="testimonial--cards" class="grid md:grid-cols-2 grid-cols-1 py-24 max-w-4xl mx-auto gap-20">
                 <div id="--card-1" class="flex gap-3 items-start">
                     <img src="./assets/Mask.png" alt="" width="72" height="72">
                     <div class="flex flex-col justify-between h-full">
@@ -161,6 +161,115 @@
                 </div>
             </div>
         </div>
+
+        <div id="our--team" class="w-full py-20">
+            <h2 class="uppercase tracking-[.35em] text-center text-stone-500">Our team</h2>
+            <h2 class="capitalize text-5xl text-center text-slate-800 font-semibold py-4">Meet the team</h2>
+            <div id="service--cards" class=" py-16 md:flex md:flex-row flex-col  gap-6">
+                <div id="team--card--1" class="h-2/5 md:w-1/3 w-full flex flex-col border rounded-lg items-center">
+                    <img src="./assets/Mask (3).png" alt="" class="py-10">
+                    <h1 class="text-2xl font-semibold text-indigo-900">Vanessa Laird</h1>
+                    <h2 class="uppercase py-3 tracking-[.15em] font-semibold text-center text-stone-500">UI designer
+                    </h2>
+                    <div class="flex border w-full h-12 mt-6 justify-between">
+                        <div class="w-2/5 flex justify-center h-full border-r">
+                            <img src="./assets/twitter.svg" alt="" width="32" height="32">
+                        </div>
+
+                        <div class="w-2/5 flex justify-center h-full ">
+                            <img src="./assets/facebook.svg" alt="" width="32" height="32">
+                        </div>
+
+                        <div class="w-2/5 flex justify-center h-full border-l">
+                            <img src="./assets/basketball-solid.svg" alt="" width="32" height="32">
+                        </div>
+                    </div>
+
+                </div>
+                <div id="team--card--2"
+                    class="h-2/5 md:w-1/3 w-full flex flex-col border rounded-lg items-center my-12 md:my-0">
+                    <img src="./assets/Userpic (1).png" alt="" class="py-10">
+                    <h1 class="text-2xl font-semibold text-indigo-900">Manson Campbell</h1>
+                    <h2 class="uppercase py-3 tracking-[.15em] font-semibold text-center text-stone-500">UI designer
+                    </h2>
+                    <div class="flex border w-full h-12 mt-6 justify-between">
+                        <div class="w-2/5 flex justify-center h-full border-r">
+                            <img src="./assets/twitter.svg" alt="" width="32" height="32">
+                        </div>
+
+                        <div class="w-2/5 flex justify-center h-full ">
+                            <img src="./assets/facebook.svg" alt="" width="32" height="32">
+                        </div>
+
+                        <div class="w-2/5 flex justify-center h-full border-l">
+                            <img src="./assets/basketball-solid.svg" alt="" width="32" height="32">
+                        </div>
+                    </div>
+
+                </div>
+                <div id="team--card--3" class="h-2/5 md:w-1/3 w-full flex flex-col border rounded-lg items-center">
+                    <img src="./assets/Userpic (2).png" alt="" class="py-10">
+                    <h1 class="text-2xl font-semibold text-indigo-900">Irea Evans</h1>
+                    <h2 class="uppercase py-3 tracking-[.15em] font-semibold text-center text-stone-500">Client Manager
+                    </h2>
+                    <div class="flex border w-full h-12 mt-6 justify-between">
+                        <div class="w-2/5 flex justify-center h-full border-r">
+                            <img src="./assets/twitter.svg" alt="" width="32" height="32">
+                        </div>
+
+                        <div class="w-2/5 flex justify-center h-full ">
+                            <img src="./assets/facebook.svg" alt="" width="32" height="32">
+                        </div>
+
+                        <div class="w-2/5 flex justify-center h-full border-l">
+                            <img src="./assets/basketball-solid.svg" alt="" width="32" height="32">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <h2 class="uppercase tracking-[.35em] text-center text-stone-500 pt-16">Our team</h2>
+            <h2 class="capitalize text-5xl text-center text-slate-800 font-semibold py-4">Subscribe our newsletter</h2>
+            <div id="subscribe--section--our--team" class="py-20 md:flex md:flex-row flex-col gap-10">
+                <div class="md:w-[40%]">
+                    <img src="./assets/Frame.png" alt="">
+                </div>
+                <div
+                    class="md:w-[60%] w-full text-justify md:flex md:flex-col flex-col md:justify-between justify-between flex">
+                    <p class="text-lg font-medium py-10">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
+                        soluta explicabo
+                        officia,
+                        voluptatibus nulla voluptates.</p>
+                    <input type="text" placeholder="Your E-mail here..."
+                        class="border rounded-full drop-shadow-lg md:w-full px-10 py-5 w-full placeholder:text-black placeholder:font-semibold placeholder:text-xl ">
+                    <a href="#"
+                        class="my-16 px-8 py-4 bg-orange-500 rounded-lg text-white capitalize text-center">Subscribe our
+                        newsletter</a>
+                </div>
+            </div>
+        </div>
+        <footer class="pt-16 w-full">
+            <div id="footer--first" class="flex justify-between">
+                <div id="image--and--copyright" class="flex items-center gap-16">
+                    <div class="w-[12rem]"><img src="./assets/Logo.png" alt=""></div>
+                    <p class="md:text-lg">&copy; 2020 Epixelab. All rights reserved</p>
+                </div>
+                <ul class="hidden md:flex gap-6">
+                    <li><a href="#" class="capitalize text-lg text-indigo-800">portfolio</a></li>
+                    <li><a href="#" class="capitalize text-lg text-indigo-800">How it works</a></li>
+                    <li><a href="#" class="capitalize text-lg text-indigo-800">pricing</a></li>
+                    <li><a href="#" class="capitalize text-lg text-indigo-800">about</a></li>
+                    <li><a href="#" class="capitalize text-lg text-indigo-800">Login</a></li>
+                </ul>
+            </div>
+            <div class="h-[1px] w-full bg-stone-300 my-5"></div>
+            <div id="footer--bottom">
+                <p class="text-stone-400">Startup Framework contains components and complex blocks which can be easily
+                    be integrated into
+                    almost any design.</p>
+            </div>
+        </footer>
     </div>
 </body>
 
