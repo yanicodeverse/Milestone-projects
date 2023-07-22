@@ -29,8 +29,8 @@
     </header>
 
     <main class="mb-60">
-        <div id="section--hero" class="flex px-10 w-full my-10 justify-between">
-            <div id="left--section">
+        <div id="section--hero" class="md:flex md:flex-row flex-col px-10 w-full my-10 justify-between">
+            <div id="left--section" class="my-12 md:my-0">
                 <h1 class="text-7xl font-light text-gray-600">
                     Let's Ride
                     <span class="text-8xl font-medium text-gray-700">The Future.</span>
@@ -65,7 +65,8 @@
                 </div>
             </div>
         </div>
-        <div id="specs--section" class="flex w-full px-10 py-5 justify-between items-center">
+        <div id="specs--section"
+            class="flex max-md:grid max-md:grid-cols-2 max-md:grid-rows-3 w-full px-10 py-5 justify-between items-center">
             <div class="w-40 h-40 shadow-md shadow-gray-300 flex flex-col justify-center items-center">
                 <p class="font-bold text-4xl text-gray-700">105 <span class="text-2xl">lbs</span></p>
                 <p class="capitalize py-2 text-gray-500">net weight</p>
@@ -99,7 +100,8 @@
                 technology
                 feature:
             </p>
-            <div id="product--information--image--and--info" class="flex w-full justify-between ">
+            <div id="product--information--image--and--info"
+                class="md:flex md:flex-row flex-col w-full justify-between ">
                 <img src="./assets/product information image.png" alt="product information image">
                 <div id="info" class="flex flex-col justify-center gap-8">
                     <div class="flex items-center">
@@ -137,7 +139,7 @@
             <p class="text-center text-gray-600 text-xl py-12 font-semibold">There are multiple modes for the scooter
                 for your multiple needs.</p>
 
-            <div id="golf--bag--rock--section" class="flex justify-between py-12">
+            <div id="golf--bag--rock--section" class="md:flex md:flex-row flex-col justify-between py-12">
                 <div id="golf--bag--right--section" class="flex flex-col gap-6">
                     <h2 class="text-5xl font-semibold capitalize text-gray-700 pb-9 whitespace-nowrap">golf bag rock
                     </h2>
@@ -163,7 +165,7 @@
                 </div>
             </div>
 
-            <div id="shopping--rack--section" class="flex justify-between ">
+            <div id="shopping--rack--section" class="md:flex md:flex-row flex-col justify-between ">
                 <div id="shopping--rack--image--section">
                     <img src="./assets/shopping rack.png" alt="">
                 </div>
@@ -188,9 +190,9 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center py-14">
+            <div class="text-center py-14 max-md:mt-8">
                 <a href="#"
-                    class="border border-gray-700 capitalize px-10 py-6 rounded-md font-semibold text-3xl text-gray-700 border-2">more
+                    class="border border-gray-700 capitalize px-10 py-6 rounded-md font-semibold text-3xl text-gray-700 border-2 max-md:px-5 max-md:text-xl">more
                     accessories coming
                     soon</a>
             </div>
@@ -200,35 +202,31 @@
             <h2 class="text-6xl font-semibold capitalize text-gray-700 text-center">Gallery</h2>
             <p class="text-center text-gray-600 text-xl py-12 font-semibold">View gallery of our products and make
                 yourself satisfied with our creation.</p>
-
-            <div id="gallery--image--section" class="flex justify-between ">
-                <div id="gallery--left" class="flex flex-col w-1/2 justify-center items-center pt-44 ">
+            <!-- WORKING ON THIS SECTION TO MAKE THIS RESPONSIVE -->
+            <div id="gallery--image--section" class="md:flex md:flex-row flex-row justify-between flex-col">
+                <div id="gallery--left" class="flex flex-col w-1/2 justify-center items-center pt-44 max-md:w-full">
                     <div>
                         <h2 class="text-3xl text-gray-700 font-bold capitalize">scooter</h2>
-                        <img src="./assets/gallery scooter.png" alt="">
+                        <div><img src="./assets/gallery scooter.png" alt=""></div>
                     </div>
-                    <div class="text-center py-10">
+                    <div class="flex flex-col items-stretch gap-4 my-5">
                         <a href="#"
-                            class="border border-gray-700 capitalize px-40 py-6 rounded-md font-semibold text-3xl text-gray-700 border-2 ">Battery
+                            class="border border-gray-700 capitalize px-40 py-6 rounded-md font-semibold text-3xl text-gray-700 border-2 whitespace-nowrap max-md:px-20 max-md:py-3 text-center">Battery
                             Images</a>
-                    </div>
-                    <div class="text-center py-10">
                         <a href="#"
-                            class="border border-gray-700 capitalize px-36 py-6 rounded-md font-semibold text-3xl text-gray-700 border-2">spare
+                            class="border border-gray-700 capitalize px-36 py-6 rounded-md font-semibold text-3xl text-gray-700 border-2 whitespace-nowrap max-md:px-20 max-md:py-3 text-center">spare
                             part images</a>
-                    </div>
-                    <div class="text-center py-10">
                         <a href="#"
-                            class="border border-gray-700 capitalize px-28 py-6 rounded-md font-semibold text-3xl text-gray-700 border-2">charging
+                            class="border border-gray-700 capitalize px-28 py-6 rounded-md font-semibold text-3xl text-gray-700 border-2 whitespace-nowrap max-md:px-20 max-md:py-3 text-center">charging
                             cable images</a>
                     </div>
                 </div>
-                <div id="gallery--right" class="flex flex-col justify-around w-2/5">
+                <div id="gallery--right" class="flex flex-col justify-around w-2/5 max-md:w-full">
                     <div>
                         <h2 class="text-3xl text-gray-700 font-bold capitalize">Built quality</h2>
                         <img src="./assets/gallery built quality.png" alt="">
                     </div>
-                    <div>
+                    <div class="my-10 md:my-0">
                         <h2 class="text-3xl text-gray-700 font-bold capitalize">parts</h2>
                         <img src="./assets/gallery parts.png" alt="">
                     </div>
@@ -241,7 +239,7 @@
             <p class="text-center text-gray-600 text-xl py-12 font-semibold">Checkout our products colors.</p>
             <div id="color--image--div" class="h-2/3 relative">
                 <img src="./assets/gallery scooter.png" alt="" class="h-full w-full">
-                <div class="flex relative -mt-36">
+                <div class="flex relative -mt-36 max-md:-mt-12">
                     <img src="./assets/color-scooter-1.png" alt="" style="width: calc(100%/4);">
                     <img src="./assets/color-scooter-2.png" alt="" style="width: calc(100%/4);">
                     <img src="./assets/color-scooter-3.png" alt="" style="width: calc(100%/4);">
@@ -252,8 +250,8 @@
 
         <div id="testimonials" class="py-16 px-10 w-full">
             <h2 class="text-6xl font-semibold capitalize text-gray-700 text-center">Testimonials</h2>
-            <div id="testimonial--slider" class="flex justify-around py-20">
-                <div class="border w-1/4 shadow-lg shadow-gray-400">
+            <div id="testimonial--slider" class="md:flex md:flex-row flex-col justify-around py-20">
+                <div class="border w-1/4 max-md:w-full shadow-lg shadow-gray-400">
                     <div class="text-orange-600 text-center pt-8">
                         <i class="uis uis-star"></i>
                         <i class="uis uis-star"></i>
@@ -275,7 +273,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="border w-1/4">
+                <div class="border w-1/4 max-md:w-full max-md:my-11">
                     <div class="text-orange-600 text-center pt-8">
                         <i class="uis uis-star"></i>
                         <i class="uis uis-star"></i>
@@ -297,7 +295,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="border w-1/4">
+                <div class="border w-1/4 max-md:w-full">
                     <div class="text-orange-600 text-center pt-8">
                         <i class="uis uis-star"></i>
                         <i class="uis uis-star"></i>
@@ -343,11 +341,12 @@
         </div>
     </main>
     <footer class="w-full bg-gray-700 ">
-        <div class="flex ">
+        <div class="md:flex md:flex-row flex-col">
             <div id="footer--image" class="relative -top-32">
                 <img src="./assets/footer scooter.png" alt="">
             </div>
-            <div id="footer--content" class="text-white flex justify-between w-1/2 p-20">
+            <div id="footer--content"
+                class="text-white flex justify-between w-1/2 p-20 max-md:w-full max-md:px-8 max-md:py-0">
                 <div id="about">
                     <h2 class="text-2xl capitalize mb-10">about</h2>
                     <ul class="flex flex-col gap-4" <li><a href="#" class="text-lg capitalize">Company</a></li>
@@ -374,7 +373,7 @@
                 </div>
             </div>
         </div>
-        <div class="text-center text-white pb-4">
+        <div class="text-center text-white pb-4 max-md:py-5">
             &copy; <span>Copyright 2021. All rights reserved.</span>
         </div>
     </footer>
