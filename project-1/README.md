@@ -1,0 +1,26 @@
+# E-Guru project-1
+
+A website project which has motive to provide E-education to the students world-wide
+
+This project is created during the milestone exam-1 conducted by the PW Skills FSWD 2.0 course.
+
+## Features
+
+- Responsive design, ensuring compatibility across different devices.
+- User-friendly interface with intuitive navigation for easy learning.
+
+## Tech Stack
+
+- HTML
+- CSS
+
+## Getting started
+
+To run this project locally, follow these steps:
+
+- Clone the repository: git clone https://github.com/yanicodeverse/Milestone-projects.git
+- Navigate to the project folder: cd project-1
+- Open the index.html file in your web browser.
+- Open with Live server
+
+That's it! Now you can explore the E-Guru website on your local machine.
