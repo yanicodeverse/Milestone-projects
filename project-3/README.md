@@ -1,6 +1,6 @@
 # Bike Landing Page project-3
 
-# Link -[project](http://pixelab-sigma.vercel.app)
+# Link -[project](http://bike-landing-page-three.vercel.app)
 
 A Bike landing page which tells about it's bike's features, facilities, Quality, Pricing and many more things about his Bike's company / startup.
 

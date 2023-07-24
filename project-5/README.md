@@ -1,8 +1,11 @@
 # Pixelab Landing page project-5
 
-A Landing page of a startup company named "Pixlab" which has motive to boost their client's profit by bringing them to digital platform from their offline business and expand their client's business across the globe by using their digital services and expertise.
+# Link -[project](http://pixelab-sigma.vercel.app)
 
-This project is created during the milestone exam-1 conducted by the PW Skill's FSWD 2.0 course.
+
+A Landing page of a startup company named "Pixelab" which has motive to boost their client's profit by bringing them to digital platform from their offline business and expand their client's business across the globe by using their digital services and expertise.
+
+This project is created during the milestone exam-1 conducted by the PW Skills FSWD 2.0 course.
 
 ## Features
 
