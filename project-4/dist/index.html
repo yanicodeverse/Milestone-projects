@@ -4,49 +4,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Landing Page</title>
     <link rel="stylesheet" href="output.css">
-    <title>Document</title>
+
+    <!-- SCROLL--BAR -->
+    <style>
+        body {
+            overflow: overlay;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+            background-color: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #3d3d3d;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 
-<body>
-    <header class="flex items-center justify-between bg-slate-400 py-4 px-10  text-white">
-        <div class="logo">
-            <img src="assets/logo.png" alt="logo">
-        </div>
-        <nav>
-            <ul class="flex gap-10">
-                <li><a href="#marketplace">MARKETPLACE</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#resource">RESOURCE</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
-        </nav>
-        <div class="flex gap-4">
-            <a href="#login">Log in</a>
-            <a href="#sign-up">Sign up</a>
-        </div>
-    </header>
-    <main>
-        <!-- main section start -->
-        <div class="p-10 grid gap-10 grid-cols-2 place-items-center">
-            <div>
-                <h1 class="text-7xl mb-4">Keep Calm & Collect Your NFTs.</h1>
-                <p class="text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod amet sit dicta
-                    voluptatibus cum rem
-                    voluptatum obcaecati debitis doloribus doloremque ipsa pariatur vitae, deserunt quae, vel
-                    exercitationem alias perspiciatis laudantium sapiente ducimus!</p>
+<body class="bg-[#160E2A]">
+    <header class="custom-gradient round-bottom">
+        <!-- navbar starts -->
+        <nav class="backdrop-blur-md md:bg-white/10 bg-none absolute w-full top-0">
+            <div class="container mx-auto flex gap-72 items-center py-3 text-white md:px-10 px-5">
+                <div class="logo">
+                    <img src="./assets/logo.png" alt="logo" />
+                </div>
 
-                <div class="flex gap-10 items-center">
-                    <img src="assets/triangle-round-rectangle.svg" alt="">
-                    <h2>Let's get started!</h2>
-                    <p>Watch this quick demo vide to see how to get started.</p>
+                <div class="links hidden md:block">
+                    <ul class="uppercase flex gap-8">
+                        <li><a href="#">market place</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">resources</a></li>
+                        <li><a href="#">faq</a></li>
+                    </ul>
+                </div>
+
+                <div class="hidden md:flex gap-4 items-center">
+                    <div
+                        class="bg-gradient-to-r from-[#40AFFD] to-[#A931FE] inline-block px-[2px] py-[2px] rounded-lg ">
+                        <a class="capitalize font-medium text-base text-white block w-full bg-[#0E091A] rounded-lg px-4 py-2"
+                            href="#view-all-collectors">Login</a>
+                    </div>
+                    <div
+                        class="bg-gradient-to-r from-[#40AFFD] to-[#A931FE] inline-block px-[2px] py-[2px] rounded-lg ">
+                        <a class="capitalize font-medium text-base text-white block w-full bg-[#0E091A] rounded-lg px-4 py-2"
+                            href="#view-all-collectors">Signup</a>
+                    </div>
                 </div>
             </div>
-            <div>
-                <img src="assets/image.png" alt="a human hand">
+            <hr class="opacity-50" />
+        </nav>
+        <!-- navbar end -->
+
+        <!-- hero-section starts -->
+        <div class="hero-section text-white flex md:flex-row flex-col justify-between container mx-auto top-0 ">
+            <!-- content starts -->
+            <div
+                class="content w-full md:w-[50%] flex flex-col justify-center mt-[155px] md:mt-0 items-center md:items-start px-10 ">
+                <h1 class="md:text-6xl text-5xl text-[#ab90f5] mb-5">
+                    Keep Calm &
+                    Collect your NFT<span class="text-2xl">S.</span>
+                </h1>
+                <p class="md:my-10 my-5 text-[#C8C3CF] text-justify md:text-left">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque velit
+                    illum facere quis dolorum ex sit aliquid dicta, aut corrupti animi
+                    earum maiores ducimus alias maxime, facilis in amet distinctio!
+                </p>
+                <div class="btn flex items-center gap-10 md:mt-2 my-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+                        <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" stop-color="#6749F8" />
+                                <stop offset="100%" stop-color="#B45CFE" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="36" cy="36" r="36" fill="url(#gradient)" />
+                        <polygon points="28,22 56,36 28,50" fill="#fff" />
+                    </svg>
+                    <div class="content md:w-[45%] w-full flex flex-col gap-1 mb-8 md:mb-0">
+                        <h4 class="font-semibold text-xl">Let's get started!</h4>
+                        <span class="font-normal text-[#c3bccc]">
+                            Watch this quick demo to see how to get started.
+                        </span>
+                    </div>
+                </div>
             </div>
+            <!-- content starts -->
+
+            <!-- image starts -->
+            <div class="image flex justify-center items-center px-5 md:px-0">
+                <img src="./assets/image.png" alt="cover-image" class="object-contain" />
+            </div>
+            <!-- image ends -->
         </div>
-        <!-- main section end -->
+        <style>
+            /* gradient mixture */
+            .custom-gradient {
+                /* background: #d164fa; */
+                background: linear-gradient(150deg,
+                        #d164fa 7%,
+                        #5152CB 18%,
+                        #501aa1 26%,
+                        #1d1336 50%);
+            }
+
+            /* div with rounded bottom */
+            .round-bottom {
+                clip-path: ellipse(100% 80% at 50% 16%);
+            }
+
+            /* button border gradient */
+            .br-gradient {
+                border-width: 1px;
+                border-style: solid;
+                border-image: linear-gradient(to right, #3c9fe6, #7f2bc0) 1;
+            }
+        </style>
+    </header>
+
+    <main>
         <!-- top creators start -->
         <section class="bg-[#160E2A]">
             <div class="text-center">
@@ -67,111 +147,257 @@
                 <img src="./assets/person.png" alt="" class="absolute max-md:hidden top-[344px] left-[396px]">
                 <img src="./assets/person.png" alt="" class="absolute max-md:hidden top-[349px] left-[659px]">
             </div>
-            <div>
-                <a class="py-1 px-4" href="#view-all-collectors"></a>
+            <div class="text-center">
+                <div
+                    class="bg-gradient-to-r from-[#40AFFD] to-[#A931FE] inline-block px-[2px] py-[2px] rounded-lg mb-4">
+                    <a class="capitalize font-medium text-base text-white block w-full bg-[#0E091A] rounded-lg p-2"
+                        href="#view-all-collectors">view
+                        all
+                        collectors</a>
+                </div>
             </div>
         </section>
         <!-- top creators end -->
         <!-- latest nft collection start -->
-        <section class="grid grid-cols-2 gap-10">
-            <div>
-                <img src="assets/Image 1.png" alt="nft image">
-                <img src="assets/merlin.png" alt="nft image">
-                <img src="assets/Avatar 1.png" alt="nft image">
-                <img src="assets/Avatar2.png" alt="nft image">
+        <section class="grid md:grid-cols-2 grid-cols-1 gap-10 bg-[#160E2A] py-16 max-md:px-10">
+            <div
+                class="grid md:grid-cols-2 grid-cols-1 max-md:py-32 gap-10 p-12 bg-gradient-to-bl from-transparent from-[30%] to-[#3B0B66] md:py-24">
+                <div class="relative -top-16">
+                    <div class="border relative h-[200px] w-[150px] text-white flex items-end mb-10">
+                        <img src="assets/Image 1.png" alt="nft image"
+                            class="absolute left-[50px] -top-[20px] bg-gradient-to-br from-[#1624AC] to-[#D3299C]">
+                        <h2 class="text-xl">5.2 ETH</h2>
+                    </div>
+                    <div class="border relative h-[200px] w-[150px] text-white flex items-end">
+                        <img src="assets/merlin.png" alt="nft image" class="absolute left-[50px] -top-[20px]">
+                        <h2 class="text-xl">3.0 ETH</h2>
+                    </div>
+                </div>
+                <div>
+                    <div class="border relative h-[200px] w-[150px] text-white flex items-end mb-10">
+                        <img src="assets/Avatar 1.png" alt="nft image"
+                            class="absolute left-[50px] -top-[20px] bg-[#322F44]">
+                        <h2 class="text-xl">7.0 ETH</h2>
+                    </div>
+                    <div class="border relative h-[200px] w-[150px] text-white flex items-end">
+                        <img src="assets/Avatar2.png" alt="nft image" class="absolute left-[50px] -top-[20px]">
+                        <h2 class="text-xl">3.2 ETH</h2>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h2>Latest NFT Collections</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, delectus ullam facilis
+            <div class="flex flex-col gap-10 justify-center p-8">
+                <h2 class=" text-5xl text-white mb-5 py-8 relative inline-block z-[1] ">
+                    <div
+                        class="h-[100px] w-[100px] top-[10px] -left-[38px] absolute bg-red-700 rounded-full -z-[1] bg-gradient-to-b from-[#6A4AF9] to-[#B95DFF]">
+                    </div>
+                    Latest NFTs Collections
+                </h2>
+                <p class="text-[#80AB9E]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem,
+                    delectus ullam facilis
                     corrupti molestias assumenda praesentium eveniet. Unde, nisi eaque.</p>
-                <a class="py-1 px-4" href="#view-all-collectors">View All Collectors</a>
+                <div
+                    class="bg-gradient-to-r from-[#40AFFD] to-[#A931FE] inline-block self-start px-[2px] py-[2px] rounded-lg mb-4">
+                    <a class="capitalize font-medium text-base text-white block w-full bg-[#0E091A] rounded-lg p-2"
+                        href="#view-all-collectors">view
+                        all
+                        collectors</a>
+                </div>
             </div>
         </section>
         <!-- latest nft collection end -->
         <!-- why choose us start -->
-        <section class="grid grid-cols-2 gap-10">
-            <div>
-                <h2>Why choose us?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt atque ad reprehenderit facilis
-                    asperiores esse distinctio cupiditate in, doloribus laudantium animi commodi facere consectetur
-                    iusto nihil veniam corporis. Ex, deserunt!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsa nobis et corporis dignissimos
-                    rerum placeat aliquid odio, minus necessitatibus ad temporibus quos officiis molestias! Ducimus
-                    animi ex et adipisci.</p>
-            </div>
-            <div>
-                <img src="assets/simple-icons_marketo.png" alt="simple icon">
-                <img src="assets/" alt="simple icon">
-                <img src="assets/wallet-one.png" alt="simple icon">
-                <img src="assets/healthicons.png" alt="simple icon">
+        <section class="pr-28 py-10 bg-[#160E2A] max-md:pr-10">
+            <div
+                class="bg-gradient-to-b from-[#A931FE] to-[#40AFFD] px-[2px] py-[2px] rounded-tr-full rounded-br-full max-md:rounded-tr-2xl max-md:rounded-br-2xl">
+                <div
+                    class="bg-[#0D0819] rounded-tr-full rounded-br-full p-20 max-md:rounded-tr-2xl max-md:rounded-br-2xl md:flex md:flex-row flex-col">
+                    <div class="text-[#80AB9E] flex-1">
+                        <div class="">
+                            <h2
+                                class="text-center text-6xl max-md:text-3xl text-white mb-8 py-8 relative inline-block z-[1]">
+                                <div
+                                    class="h-[100px] w-[100px] max-md:-top-[1px] top-[15px] -left-[38px] absolute bg-red-700 rounded-full -z-[1] bg-gradient-to-b from-[#6A4AF9] to-[#B95DFF]">
+                                </div>
+                                Why choose us?
+                            </h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt atque ad reprehenderit
+                            facilis
+                            asperiores esse distinctio cupiditate in, doloribus laudantium animi commodi facere
+                            consectetur
+                            iusto nihil veniam corporis. Ex, deserunt!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsa nobis et corporis
+                            dignissimos
+                            rerum placeat aliquid odio, minus necessitatibus ad temporibus quos officiis molestias!
+                            Ducimus
+                            animi ex et adipisci.</p>
+                    </div>
+                    <div class="grid grid-cols-2 md:flex-1 gap-8 max-md:mt-6">
+                        <div id="backdrop--shadow--1"
+                            class=" backdrop-blur-lg before:content-['']  before:relative before:-top-10  rounded-md flex justify-center items-center border z-10">
+                            <img src="assets/simple-icons_marketo.png" alt="simple icon">
+                        </div>
+                        <div id="backdrop--shadow--2"
+                            class=" backdrop-blur-lg before:content-['']  before:relative before:top-10 before:left-[20px]  rounded-md flex justify-center items-center border z-10">
+                            <img src="assets/healthicons.png" alt="simple icon">
+                        </div>
+                        <div id="backdrop--shadow--3"
+                            class=" backdrop-blur-lg before:content-['']  before:relative before:-top-10  rounded-md flex justify-center items-center border z-10 relative left-10">
+                            <img src="assets/Vector2.png" alt="simple icon">
+                        </div>
+                        <div id="backdrop--shadow--4"
+                            class=" backdrop-blur-lg before:content-['']  before:relative before:top-10 before:left-[50px] rounded-md flex justify-center items-center border z-10 relative left-10">
+                            <img src="assets/shopping-bag.svg" alt="simple icon">
+                        </div>
+                        <style>
+                            div#backdrop--shadow--1::before {
+                                box-shadow: 0 0 50px 30px #F6BB51;
+                                z-index: -10;
+                                opacity: 0.6;
+                            }
+
+                            div#backdrop--shadow--2::before {
+                                box-shadow: 0 0 50px 30px #00DD9C;
+                                z-index: -10;
+                                opacity: 0.6;
+                            }
+
+                            div#backdrop--shadow--3::before {
+                                box-shadow: 0 0 50px 30px #1754B4;
+                                z-index: -10;
+                                opacity: 0.6;
+                            }
+
+                            div#backdrop--shadow--4::before {
+                                box-shadow: 0 0 50px 30px #5C6FDB;
+                                z-index: -10;
+                                opacity: 0.6;
+                            }
+
+                            @media screen and (width < 768px) {
+                                div[id*=backdrop--shadow] {
+                                    padding: 40px;
+                                }
+                            }
+                        </style>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- why choose us end -->
         <!-- create and sell your NFTs -->
-        <section>
-            <h2>Create And Sell Your NFTs</h2>
+        <section class="bg-[#160E2A] text-white py-28">
+            <div class="text-center mb-16">
+                <h2 class="text-center md:text-6xl text-3xl text-white mb-8 py-8 relative inline-block z-[1]">
+                    <div
+                        class="h-[100px] w-[100px] top-[15px] max-md:top-[3px] -left-[38px] absolute bg-red-700 rounded-full -z-[1] bg-gradient-to-b from-[#6A4AF9] to-[#B95DFF]">
+                    </div>
+                    Create And Sell Your NFTs
+                </h2>
+            </div>
             <!-- TO LOOP THIS AFTER STYLING -->
-            <div>
-                <div id="NFT--card">
+            <div class="md:flex md:flex-row flex-col px-28 gap-28 max-md:text-center">
+                <div id="NFT--card1" class="flex flex-col items-center text-sm">
                     <img src="./assets/wallet-one.png" alt="">
-                    <h2>Set Up Your Wallet</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio adipisci vel in nihil similique
+                    <h2 class="my-3 text-xl">Set Up Your Wallet</h2>
+                    <p class="font-light text-[#C5C3CA]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+                        adipisci
+                        vel in nihil similique
                         accusamus provident explicabo rerum deleniti illo!</p>
                 </div>
+                <div id="NFT--card2" class="flex flex-col items-center text-sm max-md:my-20">
+                    <img src="./assets/triangle-round-rectangle.svg" alt="">
+                    <h2 class="my-3 text-xl">Set Up Your Wallet</h2>
+                    <p class="font-light text-[#C5C3CA]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+                        adipisci
+                        vel in nihil similique
+                        accusamus provident explicabo rerum deleniti illo!</p>
+                </div>
+                <div id="NFT--card3" class="flex flex-col items-center text-sm max-md:my-20">
+                    <img src="./assets/picture.png" alt="">
+                    <h2 class="my-3 text-xl">Set Up Your Wallet</h2>
+                    <p class="font-light text-[#C5C3CA]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+                        adipisci
+                        vel in nihil similique
+                        accusamus provident explicabo rerum deleniti illo!</p>
+                </div>
+                <div id="NFT--4" class="flex flex-col items-center text-sm">
+                    <img src="./assets/shopping-bag.svg" alt="">
+                    <h2 class="my-3 text-xl">Set Up Your Wallet</h2>
+                    <p class="font-light text-[#C5C3CA]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+                        adipisci
+                        vel in nihil similique
+                        accusamus provident explicabo rerum deleniti illo!</p>
+                </div>
+            </div>
+            <div class="h-[2px] mt-36 bg-gradient-to-r from-[#190F2E] to-[#190F2E] via-[#55308E]"
+                style="clip-path: ellipse(100% 100% at 50% 0%);">
             </div>
         </section>
         <!-- create and sell your NFTs END -->
         <!-- Ready for the next NFT drop start-->
-        <section>
-            <h2>Ready for the next NFT Drop?</h2>
-            <input type="text" placeholder="youremail@xyz.com">
-            <a href="#">send email</a>
+        <section class="bg-[#160E2A] text-white text-center py-28 max-md:px-10">
+            <h2 class="text-4xl ">Ready for the next NFT Drop?</h2>
+            <div class="flex flex-col items-center">
+                <input type="text" placeholder="youremail@xyz.com"
+                    class="bg-[#0D0819] placeholder:text-white placeholder:text-base placeholder:text-center placeholder:font-medium px-16 py-6 my-10 outline-none rounded-lg">
+                <div class="bg-gradient-to-r from-[#40AFFD] to-[#A931FE] inline-block px-[2px] py-[2px] rounded-lg ">
+                    <a class="capitalize font-medium text-base text-white block w-full bg-[#0E091A] rounded-lg px-20 py-2"
+                        href="#view-all-collectors">send email</a>
+                </div>
+            </div>
         </section>
         <!-- Ready for the next NFT drop start-->
     </main>
-    <footer>
-        <section>
-            <div id="footer--left">
-                <img src="./assets/logo.png" alt="">
-                <p>Amazing NFTs marketplace, Authentic and unique digital creation.</p>
-                <div id="footer--social--media--icons">
-                    <img src="./assets/whatsapp.png" alt="">
-                    <img src="./assets/fb.png" alt="">
-                    <img src="./assets/insta.png" alt="">
-                    <img src="./assets/yt.png" alt="">
-                </div>
-                <p>&copy; 2022 sapphire, All right reserved</p>
+    <footer class="md:flex md:flex-row flex-col bg-[#0E091A] text-white p-10 gap-32">
+        <div id="footer--left">
+            <div class="mb-8">
+                <img src="./assets/logo.png" alt="" class="mb-10">
+                <p class="text-xl mb-20">Amazing NFTs marketplace, Authentic and unique digital creation.</p>
             </div>
-            <div id="footer--right">
-                <div id="marketplace">
-                    <h2>Marketplace</h2>
-                    <ul>
-                        <li><a href="#">explore</a></li>
-                        <li><a href="#">NFTs</a></li>
-                        <li><a href="#">Collectibles</a></li>
-                        <li><a href="#">Virtual Reality</a></li>
-                    </ul>
-                </div>
-                <div id="resources">
-                    <h2>Resources</h2>
-                    <ul>
-                        <li><a href="#">Help center</a></li>
-                        <li><a href="#">Partners</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Newsletter</a></li>
-                    </ul>
-                </div>
-                <div id="company">
-                    <h2>Company</h2>
-                    <ul>
-                        <li><a href="#">about us</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Newsletter</a></li>
-                    </ul>
-                </div>
+            <div id="footer--social--media--icons" class="flex mb-16 gap-4">
+                <img src="./assets/whatsapp.png" alt=""
+                    class="border rounded-full p-1 h-[32px] w-[32px] object-contain border-[#545C71] border-[2px]">
+                <img src="./assets/fb.png" alt=""
+                    class="border rounded-full p-1 h-[32px] w-[32px] object-contain border-[#545C71] border-[2px]">
+                <img src="./assets/insta.png" alt=""
+                    class="border rounded-full p-1 h-[32px] w-[32px] object-contain border-[#545C71] border-[2px]">
+                <img src="./assets/yt.png" alt=""
+                    class="border rounded-full p-1 h-[32px] w-[32px] object-contain border-[#545C71] border-[2px]">
             </div>
-        </section>
+            <p class="text-[#545C71] hidden md:block">&copy; 2022 sapphire, All right reserved</p>
+        </div>
+        <div id="footer--right" class="md:flex md:flex-row flex-col text-xl capitalize gap-12">
+            <div id="marketplace">
+                <h2 class="mb-5 text-2xl">Marketplace</h2>
+                <ul class="flex flex-col gap-5">
+                    <li><a href="#">explore</a></li>
+                    <li><a href="#">NFTs</a></li>
+                    <li><a href="#">Collectibles</a></li>
+                    <li><a href="#">Virtual Reality</a></li>
+                </ul>
+            </div>
+            <div id="resources" class="max-md:my-16">
+                <h2 class="mb-5 text-2xl">Resources</h2>
+                <ul class="flex flex-col gap-5">
+                    <li><a href="#">Help center</a></li>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                </ul>
+            </div>
+            <div id="company">
+                <h2 class="mb-5 text-2xl">Company</h2>
+                <ul class="flex flex-col gap-5">
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                </ul>
+            </div>
+            <p class="text-[#545C71] hidden max-md:block mt-8">&copy; 2022 sapphire, All right reserved</p>
+
+        </div>
     </footer>
 </body>
 
